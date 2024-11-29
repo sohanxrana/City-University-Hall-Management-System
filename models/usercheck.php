@@ -33,8 +33,8 @@ if (!$stmt->execute()) {
             $_SESSION['username'] = $user['username'];
             $_SESSION['role'] = $user['role'];
 
-            // Redirect to index page
-            header("Location: ../public/index.php");
+            // Redirect to dashboard page
+            header("Location: ../view/student/dashboard.php");
             exit();
         } else {
             // Incorrect password

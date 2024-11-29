@@ -7,14 +7,14 @@
 
 <head>
     <meta charset="utf-8">
-    <link rel="icon" href="/assets/img/icon.png">
+    <link rel="icon" href="../assets/img/icon.png">
     <title>City University - Hall Portal</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
     <meta content="" name="description">
 
     <!-- Favicon -->
-    <link href="../assets/img/favicon.ico" rel="icon">
+    <link href="assets/img/favicon.ico" rel="icon">
 
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -106,7 +106,7 @@
 			        <div class="profile-container">
 			            <div class="profile-icon" onclick="toggleDropdown()">👤</div>
 			            <div id="dropdownMenu" class="dropdown-menu">
-			                <a href="../view/admin/dashboard.php"><span class="icon">🏠</span>Dashboard</a>
+			                <a href="../view/student/dashboard.php"><span class="icon">🏠</span>Dashboard</a>
 			                <a href="view/notifications.php"><span class="icon">🔔</span>Notifications</a>
 			                <a href="view/profile.php"><span class="icon">👤</span>Profile</a>
 			                <a href="view/profile_settings.php"><span class="icon">⚙️</span>Settings</a>
