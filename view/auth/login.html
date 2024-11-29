@@ -85,5 +85,28 @@
         </form>
       </div>
     </div>
+
+    <!-- <script>
+      document
+        .getElementById("loginForm")
+        .addEventListener("submit", async (e) => {
+          e.preventDefault();
+          const formData = new FormData(e.target);
+
+          const response = await fetch("/view/Student/login.php", {
+            method: "POST",
+            body: formData,
+          });
+
+          const result = await response.json();
+          if (result.status === "success") {
+            window.location.href = "/view/Student/dashboard.php";
+          } else {
+            const errorMessage = document.getElementById("errorMessage");
+            errorMessage.textContent = result.message;
+            errorMessage.classList.remove("d-none");
+          }
+        });
+    </script> -->
   </body>
 </html>
