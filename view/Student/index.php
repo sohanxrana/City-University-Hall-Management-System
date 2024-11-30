@@ -1,8 +1,5 @@
 <?php
-// Example: Ensure the $student variable is set (replace with actual data source)
-$student = isset($_SESSION['student']) ? $_SESSION['student'] : null;
 ?>
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -185,7 +182,7 @@ $student = isset($_SESSION['student']) ? $_SESSION['student'] : null;
       <div id="dashboard-section" class="section active">
         <h2>Dashboard Overview</h2>
         <p>
-          Welcome, <?php echo htmlspecialchars($student['username'] ?? 'Guest'); ?>
+          Welcome, <?php echo htmlspecialchars($student['username']);?>
         </p>
       </div>
       <div id="room-booking-section" class="section">
@@ -201,7 +198,8 @@ $student = isset($_SESSION['student']) ? $_SESSION['student'] : null;
         <h2>Meal Plan</h2>
         <p>
           Meal Plan:
-          <?php echo $student['meal_plan'] ?? 'Not available'; ?>
+          <?php echo $student['meal_plan'];
+          ?>
         </p>
       </div>
       <div id="notifications-section" class="section">
